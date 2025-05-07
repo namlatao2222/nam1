@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NGANHANGBANK</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("6561.jpg_wh860");
+      
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card-form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .card-form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .card-form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .card-form button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-form">
+    <h2>Nhập thông tin thẻ</h2>
+    <form method="POST">
+      <label for="cardNumber">Số thẻ</label>
+      <input type="text" name="cardNumber" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" />
+
+      <label for="cardHolder">Tên chủ thẻ</label>
+      <input type="text" name="cardHolder" id="cardHolder" placeholder="Nguyen Van A" />
+
+      <label for="expiry">Ngày hết hạn</label>
+      <input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5" />
+
+      <label for="cvv">CVV</label>
+      <input type="password" name="cvv" id="cvv" placeholder="123" maxlength="3" />
+
+      <button type="submit">Thanh toán</button>
+    </form>
+  </div>
+
+</body>
+</html>
